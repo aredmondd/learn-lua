@@ -2,6 +2,8 @@
 takeaways
 1. `lua -i -lchp1` allows you to run functions declared in a file in interactive mode
 2. `dofile('chp1.lua')` does a similar thing
+3.  1 is not inherintly true, it's only true when using and/or/not, 
+    like 1 == true is `false` but 1 and true is `true`
 ]]
 
 -- 1.1: allow function to take negative values
@@ -38,3 +40,11 @@ NULL = 16
 -- returns FALSE because type() always returns a string
 -- type(nil) == nil      --> false
 -- type(nil) == 'nil'    --> true
+
+-- 1.6: check if something is a boolean with using function type
+function isBoolean(x)
+    if x == true or x == false then
+        return true
+    end
+    return false
+end
