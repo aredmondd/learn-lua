@@ -21,3 +21,20 @@ end
 function twice(x)
     return 2.0 * x
 end
+
+-- 1.3: i believe SQL also uses thhis comment syntax
+
+-- 1.4: valid identifiers
+__ = 10
+_end = 11
+End = 12
+-- end = 13 (not allowed)
+-- until? = 14 (not allowed)
+-- nil = 15 (not allowed)
+NULL = 16
+-- one-step = 17 (not allowed)
+
+-- 1.5: type(nil) == nil?
+-- returns FALSE because type() always returns a string
+-- type(nil) == nil      --> false
+-- type(nil) == 'nil'    --> true
