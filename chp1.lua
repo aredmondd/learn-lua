@@ -48,3 +48,13 @@ function isBoolean(x)
     end
     return false
 end
+
+-- 1.7: it's not necessary but i would still have them since it reads way better
+-- (x and y and (not z)) or ((not y) and x)
+-- x and y and not z or not y and x
+
+-- 1.8: print the name of the script without hard coding it's value
+-- must be ran like: `lua chp1.lua`
+function printFunctionName()
+    print(arg[0])
+end
