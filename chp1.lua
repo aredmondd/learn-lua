@@ -4,6 +4,14 @@ takeaways
 2. `dofile('chp1.lua')` does a similar thing
 3.  1 is not inherintly true, it's only true when using and/or/not, 
     like 1 == true is `false` but 1 and true is `true`
+4.  in the case of `4 and 5`, we check 4. four is true, so we check 5. 5 is also true, so we return 5.
+    in the case of `nil and 13`, check nil. nil is falsy, so don't have to check 13. we return nil.
+
+5.  in the case of `false or "hi"` we check false, and we have to check "hi", which is true, so we return "hi"
+    in the case of `nil or false` we check nil, which is false, so we have to check false. both are false. so we return false.
+
+6.  lua basicaly returns the value it had to check last. if the first value of an and is false, we don't have to check the rest of the statement.
+    we can jsut return the first value, denoting that it's false.
 ]]
 
 -- 1.1: allow function to take negative values
